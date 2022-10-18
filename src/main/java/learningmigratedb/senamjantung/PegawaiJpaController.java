@@ -30,6 +30,9 @@ public class PegawaiJpaController implements Serializable {
     }
     private EntityManagerFactory emf = Persistence.createEntityManagerFactory("learningmigratedb_senamjantung_jar_0.0.1-SNAPSHOTPU");
 
+    public PegawaiJpaController() {
+    }
+
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
     }

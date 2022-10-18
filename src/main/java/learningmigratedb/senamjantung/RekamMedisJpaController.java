@@ -30,6 +30,9 @@ public class RekamMedisJpaController implements Serializable {
     }
     private EntityManagerFactory emf = Persistence.createEntityManagerFactory("learningmigratedb_senamjantung_jar_0.0.1-SNAPSHOTPU");
 
+    public RekamMedisJpaController() {
+    }
+
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
     }
